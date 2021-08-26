@@ -22,6 +22,10 @@ const routes = [
         path: '/daybook',
         ...daybookRouter,
     },
+    {
+        path: '/',
+        redirect: { name: 'daybook' },
+    },
 ]
 
 const router = createRouter({
